@@ -11,7 +11,7 @@ async function handleSubmit(event) {
   const message = event.target.message.value;
 
   try {
-      const response = await fetch("http://localhost:8080/message", {
+      const response = await fetch("https://guestbook-project-2.onrender.com//message", {
           method: "POST",
           body: JSON.stringify({ username, message }),
           headers: {
@@ -32,7 +32,7 @@ async function handleSubmit(event) {
 
 async function fetchMessages() {
   try {
-      const response = await fetch("http://localhost:8080/message");
+      const response = await fetch("https://guestbook-project-2.onrender.com//message");
       if (!response.ok) {
           throw new Error("Failed");
       }
