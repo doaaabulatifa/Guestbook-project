@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c26969;
+    background-image: url(./img/gp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 0;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #6e0c42;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+p{
+    color: rgb(12, 148, 82);
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+}
+span{
+color: white;
+font-weight: bold;
+text-transform:uppercase;
+text-shadow: #26572a;
+text-decoration: wavy;
+font-style: italic;
+
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #6e0c42;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: #45a049; 
+}
+.message {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+
+#messageList {
+    list-style: none;
+    padding: 0;
+}
+
+#messageList li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    color: #4CAF50;
+    font-weight: bolder;
+}
+h2{
+    text-align: center;
+    color: antiquewhite;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+        font-style: italic;
+      
+    }
+
+    #logo img {
+        width: 80px; 
+    }
+
+    button {
+        padding: 5px 15px;
+        font-size: 12px; 
+    }
+
+    input[type="text"],
+    textarea {
+        font-size: 15px; 
+    }
+
+    #messageList li {
+        padding: 8px; 
+        font-size: 14px; 
+    }
+}

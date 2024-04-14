@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <title>Tech Educators Graduation Guestbook</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="logo"><img src="./img/techeduk_logo.jpg" alt="logo" height="150" width="180"></div>
+            <h1>Tech Educators Graduation Guestbook <img src="./img/hat.png" alt="grad"></h1>
+            <p id="not">Congratulations to the graduates! Leave a <span>message</span>  to celebrate their success.</p>
+        </header>
+        <form id="guestbookForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="username" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="message" id="messageContainer">
+            <h2>Messages</h2>
+            <ul id="messageList"></ul>
+        </div>
+    </div>
+</body>
+</html>
